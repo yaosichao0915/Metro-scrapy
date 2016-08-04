@@ -14,3 +14,5 @@ Several json files are provided , they are considered as the configs of the prog
 
 
 To do list: For what I need is some unique products, so there is no changing pages function provided; Changing the cookies automatically is function urgently needed.
+
+Based on windows 10 and pythno 2.7 , libraries needed can be found at the beginning of the file 

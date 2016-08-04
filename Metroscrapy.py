@@ -44,14 +44,14 @@ class PageScraper(object):
             http=httplib2.Http()
             response,content=http.request(url,'GET',headers=headers)
             return content
-		except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout):
-		    print ('connect error')
-			return None
+	except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout):
+	    print ('connect error')
+	    return None
 
     def parasePage(self):
        
         html = self.getHTML(self.url)
-		if html == None:
+	if html == None:
             return None
         soup = BeautifulSoup(html, 'html.parser')
         div_page = soup.body.find('div',attrs={'id':'page'})
